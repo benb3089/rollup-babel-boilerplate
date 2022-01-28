@@ -1,0 +1,31 @@
+{
+  "name": "rollup-babel-boilerplate",
+  "version": "1.0.0",
+  "description": "Rollup + babel + eslint + terser boilerplate",
+  "author": "benb@callboxinc.com",
+  "license": "ISC",
+  "main": "build/lib.cjs.js",
+  "module": "build/lib.esm.js",
+  "browser": "build/lib.umd.js",
+  "devDependencies": {
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-eslint": "^8.0.1",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "eslint": "^8.7.0",
+    "prettier": "^2.5.1",
+    "rollup": "^2.66.1",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pretest": "npm run build"
+  },
+  "files": [
+    "dist"
+  ]
+}
